@@ -1,0 +1,78 @@
+﻿@model PMS.Models.ProjectModels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ProjectModels</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.gcno)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.gcno)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.builder)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.builder)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.location)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.location)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.user)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.user)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.when)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.when)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.status)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.temp)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.temp)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.water)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.water)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

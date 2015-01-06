@@ -1,0 +1,111 @@
+﻿@model IEnumerable<PMS.Models.EAinfoModels>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.gc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.builder)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.agreed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.partner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.man)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telephone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.begin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.test)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.finish)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.design)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.accept)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.gc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.builder)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.agreed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.partner)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.man)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telephone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.begin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.test)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.finish)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.design)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.accept)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

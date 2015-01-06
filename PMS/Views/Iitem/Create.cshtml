@@ -1,0 +1,68 @@
+﻿@model PMS.Models.IitemModels
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>IitemModels</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.gc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.gc)
+            @Html.ValidationMessageFor(model => model.gc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.key)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.key)
+            @Html.ValidationMessageFor(model => model.key)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.value)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.value)
+            @Html.ValidationMessageFor(model => model.value)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.order)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.order)
+            @Html.ValidationMessageFor(model => model.order)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.parent)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.parent)
+            @Html.ValidationMessageFor(model => model.parent)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

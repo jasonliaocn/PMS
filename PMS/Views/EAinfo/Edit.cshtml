@@ -1,0 +1,142 @@
+﻿@model PMS.Models.EAinfoModels
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>EAinfoModels</legend>
+
+        @Html.HiddenFor(model => model.id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.gc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.gc)
+            @Html.ValidationMessageFor(model => model.gc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.builder)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.builder)
+            @Html.ValidationMessageFor(model => model.builder)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.agreed)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.agreed)
+            @Html.ValidationMessageFor(model => model.agreed)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.price)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.price)
+            @Html.ValidationMessageFor(model => model.price)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.partner)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.partner)
+            @Html.ValidationMessageFor(model => model.partner)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.man)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.man)
+            @Html.ValidationMessageFor(model => model.man)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.phone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.phone)
+            @Html.ValidationMessageFor(model => model.phone)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.telephone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.telephone)
+            @Html.ValidationMessageFor(model => model.telephone)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.status)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.status)
+            @Html.ValidationMessageFor(model => model.status)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.begin)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.begin)
+            @Html.ValidationMessageFor(model => model.begin)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.test)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.test)
+            @Html.ValidationMessageFor(model => model.test)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.finish)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.finish)
+            @Html.ValidationMessageFor(model => model.finish)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.design)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.design)
+            @Html.ValidationMessageFor(model => model.design)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.accept)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.accept)
+            @Html.ValidationMessageFor(model => model.accept)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

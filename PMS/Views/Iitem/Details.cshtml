@@ -1,0 +1,50 @@
+﻿@model PMS.Models.IitemModels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>IitemModels</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.gc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.gc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.key)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.key)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.value)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.value)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.order)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.order)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.parent)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.parent)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

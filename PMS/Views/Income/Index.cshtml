@@ -1,0 +1,105 @@
+﻿@model IEnumerable<PMS.Models.IncomeModels>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.gc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.done)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.partner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.agreed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.send)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.no)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.income)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.incdate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.payer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.desc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.type)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.gc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.done)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.partner)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.agreed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.send)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.no)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.income)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.incdate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.payer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.desc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.type)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

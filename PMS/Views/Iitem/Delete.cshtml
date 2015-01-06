@@ -1,0 +1,54 @@
+﻿@model PMS.Models.IitemModels
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>IitemModels</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.gc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.gc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.key)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.key)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.value)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.value)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.order)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.order)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.parent)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.parent)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

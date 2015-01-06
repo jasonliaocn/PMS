@@ -1,0 +1,113 @@
+﻿@model PMS.Models.EAinfoModels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>EAinfoModels</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.gc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.gc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.builder)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.builder)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.agreed)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.agreed)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.price)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.price)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.partner)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.partner)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.man)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.man)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.phone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.phone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.telephone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.telephone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.status)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.begin)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.begin)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.test)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.test)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.finish)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.finish)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.design)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.design)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.accept)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.accept)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

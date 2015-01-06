@@ -1,0 +1,117 @@
+﻿@model PMS.Models.EAinfoModels
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>EAinfoModels</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.gc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.gc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.builder)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.builder)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.agreed)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.agreed)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.price)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.price)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.partner)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.partner)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.man)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.man)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.phone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.phone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.telephone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.telephone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.status)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.begin)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.begin)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.test)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.test)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.finish)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.finish)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.design)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.design)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.accept)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.accept)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

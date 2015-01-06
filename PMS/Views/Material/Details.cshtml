@@ -1,0 +1,92 @@
+﻿@model PMS.Models.MaterialModels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>MaterialModels</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.gc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.gc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.user)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.user)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.time)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.time)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.done)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.done)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.cost)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.cost)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.partner)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.partner)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.agreed)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.agreed)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.president)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.president)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.phone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.phone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.telephone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.telephone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.status)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
