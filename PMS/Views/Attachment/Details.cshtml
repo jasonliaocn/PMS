@@ -1,0 +1,36 @@
+﻿@model PMS.Models.AttachmentModels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>AttachmentModels</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.sysfilename)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.sysfilename)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.filename)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.filename)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.mimetype)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.mimetype)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

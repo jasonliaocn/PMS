@@ -1,0 +1,123 @@
+﻿@model IEnumerable<PMS.Models.BudgetModels>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.gc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.finish)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.account)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.accassdate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.accdate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.acccost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.paydate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.accorg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.accounter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telephone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.audit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ysdone)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.gc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.finish)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.account)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.accassdate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.accdate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.acccost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.paydate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.accorg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.accounter)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telephone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.audit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ysdone)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

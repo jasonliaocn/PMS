@@ -1,0 +1,93 @@
+﻿@model IEnumerable<PMS.Models.PayModels>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.gc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.receive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.voucher)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.paydate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.receiver)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.no)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.content)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.invoice)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.gc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.receive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.voucher)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.paydate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.receiver)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.no)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.content)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.invoice)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -186,6 +186,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AttachmentController.cs" />
+    <Compile Include="Controllers\BudgetController.cs" />
+    <Compile Include="Controllers\BudgetMaterialController.cs" />
+    <Compile Include="Controllers\BudgetMaterialModels.cs" />
     <Compile Include="Controllers\EAController.cs" />
     <Compile Include="Controllers\EAinfoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -195,15 +199,19 @@
     <Compile Include="Controllers\MaterialDTLController.cs" />
     <Compile Include="Controllers\Norm2Controller.cs" />
     <Compile Include="Controllers\NormController.cs" />
+    <Compile Include="Controllers\PayController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Controllers\TaskController.cs" />
     <Compile Include="Controllers\TemplateController.cs" />
+    <Compile Include="Controllers\TitemController.cs" />
     <Compile Include="Controllers\UnitController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\AttachmentModels.cs" />
+    <Compile Include="Models\BudgetModels.cs" />
     <Compile Include="Models\EAinfoModels.cs" />
     <Compile Include="Models\EaModels.cs" />
     <Compile Include="Models\IitemModels.cs" />
@@ -212,10 +220,12 @@
     <Compile Include="Models\MaterialModels.cs" />
     <Compile Include="Models\Norm2Models.cs" />
     <Compile Include="Models\NormModels.cs" />
+    <Compile Include="Models\PayModels.cs" />
     <Compile Include="Models\PMSDBContext.cs" />
     <Compile Include="Models\ProjectModels.cs" />
     <Compile Include="Models\TaskModels.cs" />
     <Compile Include="Models\TemplateModels.cs" />
+    <Compile Include="Models\TitemModels.cs" />
     <Compile Include="Models\UnitModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -392,6 +402,31 @@
     <Content Include="Views\Unit\Create.cshtml" />
     <Content Include="Views\Unit\Edit.cshtml" />
     <Content Include="Views\Unit\Delete.cshtml" />
+    <Content Include="Views\Pay\Index.cshtml" />
+    <Content Include="Views\Pay\Details.cshtml" />
+    <Content Include="Views\Pay\Create.cshtml" />
+    <Content Include="Views\Pay\Edit.cshtml" />
+    <Content Include="Views\Pay\Delete.cshtml" />
+    <Content Include="Views\Titem\Index.cshtml" />
+    <Content Include="Views\Titem\Details.cshtml" />
+    <Content Include="Views\Titem\Create.cshtml" />
+    <Content Include="Views\Titem\Edit.cshtml" />
+    <Content Include="Views\Titem\Delete.cshtml" />
+    <Content Include="Views\Budget\Index.cshtml" />
+    <Content Include="Views\Budget\Details.cshtml" />
+    <Content Include="Views\Budget\Create.cshtml" />
+    <Content Include="Views\Budget\Edit.cshtml" />
+    <Content Include="Views\Budget\Delete.cshtml" />
+    <Content Include="Views\BudgetMaterial\Index.cshtml" />
+    <Content Include="Views\BudgetMaterial\Details.cshtml" />
+    <Content Include="Views\BudgetMaterial\Create.cshtml" />
+    <Content Include="Views\BudgetMaterial\Edit.cshtml" />
+    <Content Include="Views\BudgetMaterial\Delete.cshtml" />
+    <Content Include="Views\Attachment\Index.cshtml" />
+    <Content Include="Views\Attachment\Details.cshtml" />
+    <Content Include="Views\Attachment\Create.cshtml" />
+    <Content Include="Views\Attachment\Edit.cshtml" />
+    <Content Include="Views\Attachment\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

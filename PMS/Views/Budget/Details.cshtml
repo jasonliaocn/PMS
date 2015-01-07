@@ -1,0 +1,127 @@
+﻿@model PMS.Models.BudgetModels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>BudgetModels</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.gc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.gc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.type)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.type)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.price)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.price)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.finish)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.finish)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.account)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.account)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.accassdate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.accassdate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.accdate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.accdate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.acccost)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.acccost)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.paydate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.paydate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.accorg)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.accorg)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.accounter)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.accounter)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.phone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.phone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.telephone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.telephone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.status)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.audit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.audit)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ysdone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ysdone)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

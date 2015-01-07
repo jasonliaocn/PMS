@@ -1,0 +1,156 @@
+﻿@model PMS.Models.BudgetModels
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>BudgetModels</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.gc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.gc)
+            @Html.ValidationMessageFor(model => model.gc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.type)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.type)
+            @Html.ValidationMessageFor(model => model.type)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.price)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.price)
+            @Html.ValidationMessageFor(model => model.price)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.finish)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.finish)
+            @Html.ValidationMessageFor(model => model.finish)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.account)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.account)
+            @Html.ValidationMessageFor(model => model.account)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.accassdate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.accassdate)
+            @Html.ValidationMessageFor(model => model.accassdate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.accdate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.accdate)
+            @Html.ValidationMessageFor(model => model.accdate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.acccost)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.acccost)
+            @Html.ValidationMessageFor(model => model.acccost)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.paydate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.paydate)
+            @Html.ValidationMessageFor(model => model.paydate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.accorg)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.accorg)
+            @Html.ValidationMessageFor(model => model.accorg)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.accounter)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.accounter)
+            @Html.ValidationMessageFor(model => model.accounter)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.phone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.phone)
+            @Html.ValidationMessageFor(model => model.phone)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.telephone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.telephone)
+            @Html.ValidationMessageFor(model => model.telephone)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.status)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.status)
+            @Html.ValidationMessageFor(model => model.status)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.audit)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.audit)
+            @Html.ValidationMessageFor(model => model.audit)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ysdone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ysdone)
+            @Html.ValidationMessageFor(model => model.ysdone)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

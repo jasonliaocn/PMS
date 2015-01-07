@@ -1,0 +1,43 @@
+﻿@model PMS.Controllers.BudgetMaterialModels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>BudgetMaterialModels</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ys)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ys)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.amount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.amount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.addition)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.addition)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,62 @@
+﻿@model PMS.Models.TitemModels
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>TitemModels</legend>
+
+        @Html.HiddenFor(model => model.id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.template)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.template)
+            @Html.ValidationMessageFor(model => model.template)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.key)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.key)
+            @Html.ValidationMessageFor(model => model.key)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.order)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.order)
+            @Html.ValidationMessageFor(model => model.order)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.parent)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.parent)
+            @Html.ValidationMessageFor(model => model.parent)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,47 @@
+﻿@model PMS.Controllers.BudgetMaterialModels
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>BudgetMaterialModels</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ys)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ys)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.amount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.amount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.addition)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.addition)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

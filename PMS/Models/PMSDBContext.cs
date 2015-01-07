@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using PMS.Controllers;
 
 namespace PMS.Models
 {
@@ -40,6 +41,16 @@ namespace PMS.Models
         public DbSet<TemplateModels> TemplateModels { get; set; }
 
         public DbSet<UnitModels> UnitModels { get; set; }
+
+        public DbSet<PayModels> PayModels { get; set; }
+
+        public DbSet<TitemModels> TitemModels { get; set; }
+
+        public DbSet<BudgetModels> BudgetModels { get; set; }
+
+        public DbSet<BudgetMaterialModels> BudgetMaterialModels { get; set; }
+
+        public DbSet<AttachmentModels> AttachmentModels { get; set; }
 
     }
 }

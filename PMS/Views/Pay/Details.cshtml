@@ -1,0 +1,92 @@
+﻿@model PMS.Models.PayModels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>PayModels</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.gc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.gc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.receive)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.receive)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.pay)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.pay)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.voucher)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.voucher)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.paydate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.paydate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.status)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.status)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.receiver)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.receiver)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.no)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.no)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.content)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.content)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.type)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.type)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.invoice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.invoice)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
